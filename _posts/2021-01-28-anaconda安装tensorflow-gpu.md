@@ -95,11 +95,13 @@ conda config --show channels
 ```
 conda config --remove-key channels
 ```
+
 2. 执行安装命令
 ```
 conda install tensorflow==2.1.0
 ```
-在安装tensorflow 2.0以上版本时会自动安装上依赖的cuda(包名应该是cudatoolkit)和cudnn，省去了另外安装cuda和cudnn
+在安装tensorflow 2.0以上版本时会自动安装上依赖的cuda(包名应该是cudatoolkit)和cudnn，省去了另外安装cuda和cudnn  
+
 3. 检查是否安装成功
 ```
 import tensorflow as tf
