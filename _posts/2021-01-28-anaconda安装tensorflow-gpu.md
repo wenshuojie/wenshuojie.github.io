@@ -76,6 +76,7 @@ conda env create -f environment-windows.yml
 ```
 #### 二 手动安装tensorflow-gpu
 由于在执行完yml文件并没有成功安装tensorflow-gpu  
+
 1. 首先可以先修改conda源  
 <font color='red'>清华源</font> 
 ```
@@ -94,7 +95,7 @@ conda config --show channels
 <font color='red'>移除源</font>
 ```
 conda config --remove-key channels
-```
+```  
 
 2. 执行安装命令
 ```
