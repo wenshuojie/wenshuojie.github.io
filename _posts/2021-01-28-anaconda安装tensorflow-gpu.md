@@ -77,7 +77,7 @@ conda env create -f environment-windows.yml
 #### 二 手动安装tensorflow-gpu
 由于在执行完yml文件并没有成功安装tensorflow-gpu  
 
-1. 首先可以先修改conda源  
+1.首先可以先修改conda源  
 <font color='red'>清华源</font> 
 ```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
@@ -97,13 +97,13 @@ conda config --show channels
 conda config --remove-key channels
 ```  
 
-2. 执行安装命令
+2.执行安装命令
 ```
 conda install tensorflow==2.1.0
 ```
 在安装tensorflow 2.0以上版本时会自动安装上依赖的cuda(包名应该是cudatoolkit)和cudnn，省去了另外安装cuda和cudnn  
 
-3. 检查是否安装成功
+3.检查是否安装成功
 ```
 import tensorflow as tf
 print('GPU',tf.test.is_gpu_available())
